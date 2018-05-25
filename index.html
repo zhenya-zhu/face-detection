@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>OpenCV.js Face Detection</title>
+    <!-- <script data-main="scripts/main" src="scripts/require.js"></script> -->
+    <!-- <script type="module" src="./scripts/main.js"></script> -->
+    <style>
+        #display-area{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <video  width="640" height="480" id="video" style="display:none"></video>
+    <div id="display-area">
+        <canvas width="640" height="480" id="outputCanvas"></canvas>
+        <canvas width="640" height="480" id="imageCanvas"></canvas>
+    </div>
+    <h1 id="info">0 ms</h1>
+    <button class='start-btn'>Start</button>
+    <button class='stop-btn'>Stop</button>
+    <button class="capture-img">Capture</button>
+    <button class="capture-face">Capture Face</button>
+    <!-- <script type="module" src="face-module.js"/> -->
+    <!-- <script src="faceDetector.js"></script> -->
+    <!-- <script src="face.js"></script> -->
+
+    <!-- <script src="faceDetector.js"></script>
+    <script src="faceDetect.js"></script>
+    <script async src="opencv/opencv.js"></script> -->
+
+    <script src="scripts/main.js" type="module"></script>
+    <script async src="scripts/opencv/opencv.js"></script>
+
+
+</body>
+
+</html>
