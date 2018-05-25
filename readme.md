@@ -16,25 +16,25 @@ http-server或者其他方式起一个本地服务器，访问index.html
 
 1. 人脸检测（detection）：给定任意一张图片，找到其中是否存在一个或多个人脸，并返回图片中每个人脸的位置和范围。
 
-![屏幕快照 2018-05-25 下午8.08.01](/Users/ezio/Documents/face-detection/face-detection-github-demo/img/屏幕快照 2018-05-25 下午8.08.01.png)
+![屏幕快照 2018-05-25 下午8.08.01](img/屏幕快照 2018-05-25 下午8.08.01.png)
 
 
 2. 人脸校准（alignment）：给定一张脸，找出其中特征点的位置，如鼻子左侧、瞳孔位置、上嘴唇下嘴唇等，经过校准得到特征点位置后，再经过位置驱动的变形，就可以将人脸摆正
 
 
-![屏幕快照 2018-05-25 下午8.09.07](/Users/ezio/Documents/face-detection/face-detection-github-demo/img/屏幕快照 2018-05-25 下午8.09.07.png)
+![屏幕快照 2018-05-25 下午8.09.07](img/屏幕快照 2018-05-25 下午8.09.07.png)
 
 
 3. 人脸比对（verification）：给定两张脸，判断是否为同一人。常用于登录控制、身份确认等，如基于人脸的手机解锁
 
 
-![屏幕快照 2018-05-25 下午8.09.36](/Users/ezio/Documents/face-detection/face-detection-github-demo/img/屏幕快照 2018-05-25 下午8.09.36.png)
+![屏幕快照 2018-05-25 下午8.09.36](img/屏幕快照 2018-05-25 下午8.09.36.png)
 
 
 4. 人脸识别（identification）：给定一张脸和一个人脸数据库，判断给定的脸是哪个人
 
 
-![屏幕快照 2018-05-25 下午8.10.20](/Users/ezio/Documents/face-detection/face-detection-github-demo/img/屏幕快照 2018-05-25 下午8.10.20.png)
+![屏幕快照 2018-05-25 下午8.10.20](img/屏幕快照 2018-05-25 下午8.10.20.png)
 
 
 除了人脸识别需要数据库所以必须由后端实现外，其余三种过程都可以尝试在前端实现。
@@ -52,11 +52,11 @@ http-server或者其他方式起一个本地服务器，访问index.html
 [Shape Detection API](https://github.com/WICG/shape-detection-api)是WCGI的一个仍未正式上线的实验性API，可以通过此API进行简单的人脸检测和二维码识别。
 
 
-![Snipaste_2018-05-17_14-38-26](/Users/ezio/Documents/face-detection/face-detection-github-demo/img/Snipaste_2018-05-17_14-38-26.png)
+![Snipaste_2018-05-17_14-38-26](img/Snipaste_2018-05-17_14-38-26.png)
 
 可以看到，纯js实现的人脸检测，需要的时间较长，性能比较差。有人做了[tracking.js和opencv2nodejs的对比](https://blog.beautifulinteractions.com/face-detection-and-recognition-with-javascript-9e0b51b1c012)，另外有[mozilla做的相同的haar算法通过js实现和WebAssembly实现的比较](https://hacks.mozilla.org/2017/09/bootcamps-webassembly-and-computer-vision/)，都得出了js实现和WebAssembly的差距在一个数量级以上。js实现的只能用在非实时的情况，否则就需要严格控制好图片的大小。
 
-![websight](/Users/ezio/Documents/face-detection/face-detection-github-demo/img/websight.gif)
+![websight](img/websight.gif)
 
 
 ##  为什么性能要求这么高？
