@@ -8,7 +8,7 @@ version: 0.1
 
 cd 到项目路径
 
-http-server或者其他方式起一个本地服务器，访问index.html
+http-server或者其他方式起一个本地服务器，访问index.html，等待几秒钟
 
 ##  人脸识别过程
 
